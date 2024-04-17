@@ -1,0 +1,10 @@
+
+$primary-color: #313F38;
+$main-color-text:#1B3B36;
+
+@mixin fontConfig($font-size:18px,$line-height:28px,$main-color-text,$weight:400){
+  font-size: $font-size;
+  line-height: $line-height;
+  color: $main-color-text;
+  font-weight: $weight;
+}

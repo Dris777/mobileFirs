@@ -1,0 +1,35 @@
+@import "base";
+@import 'variebles';
+
+
+.header{
+  background-color: $primary-color;
+  padding-top: 30px;
+}
+
+.header__container{
+  display: flex;
+  justify-content: space-between;
+}
+.header__logo{
+
+  @include fontConfig(16px,19px,#fff,500);
+}
+
+.mainNav{
+  display: none;
+}
+.header__link{
+  display: none;
+
+}
+.header__icon{
+  fill:red;
+}
+
+.header{
+  color:blue;
+}
+body{
+  color:red
+}
