@@ -72,9 +72,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .container {
-  max-width: 375px;
-  margin: 0 auto;
-  padding: 0 10px;
+  width: 375px;
+  padding: 0 15px;
 }
 
 .header {
@@ -91,11 +90,15 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 19px;
   color: #FFFCF6;
   font-weight: 500;
+}
+
+.header--backdrop {
   margin-bottom: 80px;
 }
 
 .backdrop {
   background-color: #313F38;
+  display: none;
 }
 
 .mainNav {
@@ -131,8 +134,7 @@ h1, h2, h3, h4, h5, h6 {
   opacity: 0.2;
   margin: 0 auto;
 }
-
-.header__link--small {
+.header__link--bordered::after--small {
   font-size: 18px;
   line-height: 22px;
   color: #FFFCF6;
@@ -172,14 +174,55 @@ h1, h2, h3, h4, h5, h6 {
   fill: #fff;
   position: absolute;
   top: 21px;
-  left: 639px;
+  right: 0;
 }
 
 .backdrop__icon {
   fill: #FCD043;
   position: absolute;
   top: 115px;
-  left: 412px;
+  left: 120px;
+}
+
+.main {
+  background-color: #313F38;
+}
+
+.navigation__title {
+  font-size: 80px;
+  line-height: 100%;
+  color: #FFFCF6;
+  font-weight: 400;
+  margin-bottom: 24px;
+}
+.navigation__title--another {
+  color: #FCD043;
+}
+
+.navigation__text {
+  font-size: 12px;
+  line-height: 14px;
+  color: #FCD043;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+}
+.navigation__text::after {
+  content: "";
+  display: block;
+  width: 173px;
+  height: 1px;
+  background-color: #FFFCF6;
+  opacity: 0.2;
+  margin: 24px auto;
+}
+
+.svg-large {
+  display: none;
+}
+
+.navigation__button {
+  display: none;
 }
 
 /*# sourceMappingURL=style.css.map */

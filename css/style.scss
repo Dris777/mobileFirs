@@ -13,11 +13,14 @@
 }
 .header__logo{
   @include fontConfig(16px,19px,#FFFCF6,500);
+
+}
+.header--backdrop{
   margin-bottom: 80px;
 }
-
 .backdrop{
   background-color: $primary-color;
+  display: none;
 }
 .mainNav{
   display: flex;
@@ -42,12 +45,15 @@
   background-color: #FFFCF6;
   opacity: 0.2;
   margin: 0 auto;
+
+
+  &--small{
+    @include fontConfig(18px,22px,#FFFCF6);
+    display: block;
+    margin-bottom: 40px;
+  }
 }
-.header__link--small{
-  @include fontConfig(18px,22px,#FFFCF6);
-  display: block;
-  margin-bottom: 40px;
-}
+
 .header__icon{
   fill:red;
 }
@@ -73,12 +79,49 @@
   fill:#fff;
   position: absolute;
   top: 21px;
-  left: 639px;
+  right: 0;
 }
 
 .backdrop__icon{
   fill:#FCD043;
   position: absolute;
   top: 115px;
-  left: 412px;
+  left: 120px;
+}
+
+// main
+.main{
+  background-color: $primary-color;
+}
+//navigation
+
+.navigation__title{
+  @include fontConfig(80px,100%,#FFFCF6);
+  margin-bottom: 24px;
+  &--another{
+  color:#FCD043;
+  }
+}
+
+.navigation__text{
+  @include fontConfig(12px,14px,#FCD043);
+  text-align: center;
+  text-transform: uppercase;
+
+  &::after{
+    content: '';
+    display: block;
+    width: 173px;
+    height: 1px;
+    background-color: #FFFCF6;
+    opacity: 0.2;
+    margin: 24px auto ;
+  }
+}
+
+.svg-large{
+  display: none;
+}
+.navigation__button{
+  display: none;
 }

@@ -10,8 +10,11 @@
 		<div class="header__container container">
 
 				<p class="header__logo logo">BankHotel</p>
-
+			<svg class="menu-icon" width="37" height="10">
+				<use xlink:href="/images/sprite.svg#icon-menu"></use>
+			</svg>
 			<div class="backdrop">
+				<p class="header__logo backdrop__logo logo">BankHotel</p>
 				<ul class="mainNav ">
 
 					<li class="mainNav__item">HOME</li>
@@ -30,27 +33,23 @@
 					<li class="social-list__item">Instagram</li>
 					<li class="social-list__item">TWITTER</li>
 				</ul>
-				<svg class="menu-icon" width="37" height="10">
-					<use xlink:href="/images/sprite.svg#icon-menu"></use>
-				</svg>
+
 				<svg class="backdrop__icon" width="29" height="29" >
 					<use xlink:href="/images/sprite.svg#icon-Star"></use>
 				</svg>
 			</div>
 		</div>
 	</header>
-		<main style="display: none" class="main">
+
+		<main class="main">
+
 			<section class="navigation">
+			<div class="container">
 				<h1 class="navigation__title">
 					Bank<span class="navigation__title navigation__title--another">Hotel</span>
 				</h1>
 
-				<ul class="navigation-list">
-					<li class="navigation-list__item">ROOMS //</li>
-					<li class="navigation-list__item">RESTAURANT //</li>
-					<li class="navigation-list__item">CONGRESS HALL //</li>
-					<li class="navigation-list__item"> WINE BAR</li>
-				</ul>
+				<p class="navigation__text">rooms // restaurant // congress hall // wine bar</p>
 
 				<div class="svg-large">
 					<svg class="svg-large__icon">
@@ -64,6 +63,7 @@
 						<use></use>
 					</svg>
 				</button>
+			</div>
 			</section>
 
 			<section class="hero">
@@ -85,7 +85,7 @@
 				</div>
 			</section>
 
-			<section class="about-us">
+			<section style="display: none" class="about-us">
 
 				<address class="about-us__address">
 					<a href="" class="about-us__link">+38 032 297 50 20</a>
@@ -113,7 +113,7 @@
 				<svg class="about-us__icon"></svg>
 			</section>
 
-			<section class="rooms">
+			<section style="display: none" class="rooms">
 				<h2 class="rooms__title">ROOMS&APARTMENTS</h2>
 				<p class="rooms__slogan">All room decoration was made with ecological certified and safe materials.</p>
 				<img src="" alt="" class="rooms__image">
@@ -143,7 +143,7 @@
 
 			</section>
 
-			<section class="our-facilities">
+			<section style="display: none" class="our-facilities">
 				<p class="quote">Art & Congress hall</p>
 				<h2>Our facilities</h2>
 				<svg class="our-facilities">
@@ -175,7 +175,7 @@
 				</svg>
 			</section>
 
-			<section class="gallery">
+			<section style="display: none" class="gallery">
 				<p class="gallery__quote">
 					Art & Congress hall
 				</p>
@@ -199,7 +199,6 @@
 					<use></use>
 				</svg>
 				<p class="gallery__text">It is our pleasure to meet your most unrealistic expectations.</p>
-				p.
 			</section>
 
 		</main>
@@ -267,6 +266,6 @@
 		</div>
 	</footer>
 
-<!--	<script src="test.js"></script>-->
+	<script src="test.js"></script>
 	</body>
 </html>
