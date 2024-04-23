@@ -1,0 +1,84 @@
+@import "variebles";
+@import "base.css";
+
+.header{
+  background-color: $primary-color;
+}
+.header__container{
+  padding-top: 20px;
+  padding-bottom: 24px;
+  position: relative;
+}
+.header__logo{
+  @include fontConfig(16px,19px,#FFFCF6,500);
+
+}
+.header--backdrop{
+  margin-bottom: 80px;
+}
+.backdrop{
+  background-color: $primary-color;
+  display: none;
+}
+.mainNav{
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-bottom: 119px;
+}
+.mainNav__item{
+  @include fontConfig(30px,30px,#FFFCF6);
+}
+.header__link{
+  @include fontConfig(20px,20px,#FFFCF6);
+  display: block;
+  margin-bottom: 40px;
+  text-align: center;
+}
+.header__link--bordered::after{
+  content: '';
+  display: block;
+  width: 168px;
+  height: 1px;
+  background-color: #FFFCF6;
+  opacity: 0.2;
+  margin: 0 auto;
+
+
+  &--small{
+    @include fontConfig(18px,22px,#FFFCF6);
+    display: block;
+    margin-bottom: 40px;
+  }
+}
+
+.social-list{
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+.social-list__item{
+  @include fontConfig(12px,20px,#FFFCF6,500);
+}
+.social-list__item:after{
+  content: '';
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #FFFCF6;
+  opacity: 0.2;
+  margin: 0 auto;
+}
+.menu-icon{
+  fill:#fff;
+  position: absolute;
+  top: 20px;
+  right: -16px;
+}
+
+.backdrop__icon{
+  fill:#FCD043;
+  position: absolute;
+  top: 115px;
+  left: 120px;
+}

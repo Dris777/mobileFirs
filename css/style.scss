@@ -1,100 +1,17 @@
 @import "base";
 @import 'variebles';
+@import "header";
 
 
-.header{
-  background-color: $primary-color;
-
-}
-
-.header__container{
-  padding-top: 20px;
-  padding-bottom: 40px;
-}
-.header__logo{
-  @include fontConfig(16px,19px,#FFFCF6,500);
-
-}
-.header--backdrop{
-  margin-bottom: 80px;
-}
-.backdrop{
-  background-color: $primary-color;
-  display: none;
-}
-.mainNav{
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-  margin-bottom: 119px;
-}
-.mainNav__item{
-  @include fontConfig(30px,30px,#FFFCF6);
-}
-.header__link{
-  @include fontConfig(20px,20px,#FFFCF6);
-  display: block;
-  margin-bottom: 40px;
-  text-align: center;
-}
-.header__link--bordered::after{
-  content: '';
-  display: block;
-  width: 168px;
-  height: 1px;
-  background-color: #FFFCF6;
-  opacity: 0.2;
-  margin: 0 auto;
-
-
-  &--small{
-    @include fontConfig(18px,22px,#FFFCF6);
-    display: block;
-    margin-bottom: 40px;
-  }
-}
-
-.header__icon{
-  fill:red;
-}
-
-.social-list{
-  display: flex;
-  justify-content: center;
-  gap: 40px;
-}
-.social-list__item{
-  @include fontConfig(12px,20px,#FFFCF6,500);
-}
-.social-list__item:after{
-  content: '';
-  display: block;
-  width: 100%;
-  height: 1px;
-  background-color: #FFFCF6;
-  opacity: 0.2;
-  margin: 0 auto;
-}
-.menu-icon{
-  fill:#fff;
-  position: absolute;
-  top: 21px;
-  right: 0;
-}
-
-.backdrop__icon{
-  fill:#FCD043;
-  position: absolute;
-  top: 115px;
-  left: 120px;
-}
 
 // main
 .main{
   background-color: $primary-color;
 }
 //navigation
-
+.navigation{
+  margin-bottom: 40px;
+}
 .navigation__title{
   @include fontConfig(80px,100%,#FFFCF6);
   margin-bottom: 24px;
@@ -118,10 +35,46 @@
     margin: 24px auto ;
   }
 }
-
+.navigation__subtitle{
+  @include fontConfig(14px,23px,#FFFCF6);
+  width: 285px;
+  margin: 0 auto;
+  text-align: center;
+}
 .svg-large{
   display: none;
 }
 .navigation__button{
   display: none;
+}
+
+//hero
+.hero{
+  margin-bottom: 50px;
+}
+.wrap{
+  width: 355px;
+  height: 425px;
+  background-image: url("/images/image.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.order{
+  display: none;
+}
+
+//about-us
+
+.about-us{
+
+}
+
+.about-us__address{
+  display: none;
+}
+.about-us__text{
+  @include fontConfig(20px,100%,#FFFCF6);
+  text-transform: uppercase;
+  width: 170px;
 }

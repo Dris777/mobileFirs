@@ -4,17 +4,18 @@
 	<meta charset="UTF-8">
 	<title>Title</title>
 	<link rel="stylesheet" href="./css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 	<body>
 	<header class="header">
 		<div class="header__container container">
 
 				<p class="header__logo logo">BankHotel</p>
-			<svg class="menu-icon" width="37" height="10">
+			<svg class="menu-icon" width="78" height="19">
 				<use xlink:href="/images/sprite.svg#icon-menu"></use>
 			</svg>
 			<div class="backdrop">
-				<p class="header__logo backdrop__logo logo">BankHotel</p>
+				<p class="backdrop__logo logo">BankHotel</p>
 				<ul class="mainNav ">
 
 					<li class="mainNav__item">HOME</li>
@@ -50,7 +51,9 @@
 				</h1>
 
 				<p class="navigation__text">rooms // restaurant // congress hall // wine bar</p>
-
+				<p class="navigation__subtitle">
+					The luxurious hotel in the most beautiful European city with an exclusive restaurant, conference-hall, and art-bar.
+				</p>
 				<div class="svg-large">
 					<svg class="svg-large__icon">
 						<use></use>
@@ -66,26 +69,31 @@
 			</div>
 			</section>
 
-			<section class="hero">
-
-				<div class="order">
-					<div class="order__dropdown">
-						<p class="order__text">CHECK IN</p>
-						<svg class="order__icon">
-							<use></use>
-						</svg>
-						<p class="order__text">CHECK OUT</p>
-						<svg class="order__icon">
-							<use></use>
-						</svg>
-					</div>
-					<div class="order__dropdown">
-						<p class="order__text">BOOK ROOM</p>
+			<section  class="hero">
+			<div class="container">
+				<div class="wrap">
+					<div class="order">
+						<div class="order__dropdown">
+							<p class="order__text">CHECK IN</p>
+							<svg class="order__icon">
+								<use></use>
+							</svg>
+							<p class="order__text">CHECK OUT</p>
+							<svg class="order__icon">
+								<use></use>
+							</svg>
+						</div>
+						<div class="order__dropdown">
+							<p class="order__text">BOOK ROOM</p>
+						</div>
 					</div>
 				</div>
+
+			</div>
 			</section>
 
-			<section style="display: none" class="about-us">
+			<section class="about-us">
+			<div class="container">
 
 				<address class="about-us__address">
 					<a href="" class="about-us__link">+38 032 297 50 20</a>
@@ -111,6 +119,7 @@
 				</svg>
 				<p class="about-us__text-svg"></p>
 				<svg class="about-us__icon"></svg>
+			</div>
 			</section>
 
 			<section style="display: none" class="rooms">
